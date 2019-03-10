@@ -1,19 +1,71 @@
 <?xml version="1.0" encoding="utf-8"?>
-<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    xmlns:tools="http://schemas.android.com/tools"
+<RelativeLayout
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
-
-    <TextView
-        android:layout_width="wrap_content"
+    android:background="@color/colorAccent"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <EditText
+        android:id="@+id/etName"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="sakshi menghani"
-        android:textSize="32sp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:hint="Name"
+        android:textSize="24sp"/>
 
-</android.support.constraint.ConstraintLayout>
+    <EditText
+        android:id="@+id/etEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_below="@+id/etName"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="textPassword"
+        android:hint="Password"
+        android:layout_below="@+id/etEmail"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etcpass"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="textPassword"
+        android:hint="confirm password"
+        android:layout_below="@+id/etpass"
+        android:textSize="24sp"/>
+
+    <EditText
+        android:id="@+id/etno"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="32dp"
+        android:layout_marginRight="32dp"
+        android:inputType="number"
+        android:hint="number"
+        android:layout_below="@+id/etcpass"
+        android:textSize="24sp"/>
+    <Button
+        android:id="@+id/etbtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/etno"
+        android:layout_margin="32dp"
+        android:textSize="24sp"
+        android:background="@color/colorPrimary"
+        android:text="register"
+        />
+
+
+</RelativeLayout>
